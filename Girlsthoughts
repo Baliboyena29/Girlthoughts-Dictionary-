@@ -1,0 +1,33 @@
+#code on shopping
+#storing the data
+#information-traditional, fancy,partywear,officewear and daily wear.
+#inputs, traditionals-"sarees","lenhenga cholis" and "Kurtas"
+#fancy="miniskrits","toned jeans","crops" and partyear="frocks","sarees" and kurtas
+def girlthoughts():
+    dresses={"traditional":["sarees","lehenga","Kurtas"],"fancy":["miniskirts","toned jeans"]}
+    #getting the items in the list
+    print(dresses.items())
+    #getting all the items in the list of  traditional
+    print(dresses["traditional"])
+    #getting all the keys of dresses
+    print(dresses.keys())
+    #getting all the values of dresses
+    print(dresses.values())
+    print(dresses["traditional"][2])
+    #setting the defaultdict
+    print(dresses.setdefault("traditional","morning"))
+    #if we try to set thedefault key value from the declared dict it will give the value which is present in the dictionary.
+    print(dresses.setdefault("Life","Bore"))
+    print(dresses)
+    #if we wwant to setdefault key which is not declared it will give you the value as output and declares in thedictionary.
+    womens_life={}
+    womens_life.update(dresses)
+    print(womens_life)
+    #dict.pop(key, default)
+    # Purpose: Removes the item with the specified key and returns its value. If the key is not found, the default value is returned (if provided).
+    print(dresses.pop("life","bore"))
+    #dict.popitem()
+#Purpose: Removes and returns the last key-value pair as a tuple. If the dictionary is empty, it raises a KeyError.
+#Syntax: dict.popitem()
+girlthoughts()
+
